@@ -1,0 +1,7 @@
+{
+  "print.colourScheme": "Atelier Dune",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.wordWrap": "on"
+}
