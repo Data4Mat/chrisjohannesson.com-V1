@@ -1,0 +1,30 @@
+@use "custom" as var;
+#about-me {
+  color: var.$text-color;
+  header {
+    h1 {
+      text-align: center;
+      margin-bottom: 2em;
+      text-decoration: underline;
+      font-weight: 700;
+    }
+  }
+  section {
+    h5,
+    h6 {
+      font-weight: 700;
+      font-family: var.$text-font-family;
+    }
+    h6 {
+      margin-top: 0.8em;
+    }
+    p {
+      margin-bottom: 1em;
+      text-indent: 1em;
+    }
+    margin-bottom: 2rem;
+  }
+  .no-indent {
+    text-indent: 0px;
+  }
+}

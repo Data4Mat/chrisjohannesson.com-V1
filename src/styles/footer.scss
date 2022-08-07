@@ -1,0 +1,24 @@
+@use "custom" as var;
+
+footer {
+  position: absolute; /*important to footer placement*/
+  bottom: 0px; /*important to footer placement*/
+  height: 60px; /*important to footer placement*/
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  justify-content: center;
+  background: linear-gradient(aliceblue, royalblue);
+
+  p {
+    color: var.$text-color;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: var.$breakpoint1) {
+  footer {
+    font-size: 0.9rem;
+  }
+}

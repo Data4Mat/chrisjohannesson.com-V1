@@ -1,0 +1,70 @@
+@use "custom" as var;
+@import "~bootstrap/scss/bootstrap";
+@import "./reset.scss";
+
+aside {
+  width: 15%;
+  background-color: yellow;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: var.$text-font-family;
+}
+
+.content-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var.$headline-font-family;
+}
+
+main {
+  box-sizing: border-box;
+  width: clamp(240px, 70%, 960px);
+  padding: 1rem 0.5rem;
+  box-shadow: 0 0 8px lightgray;
+  border-radius: 18px;
+  background-color: transparent;
+  margin: 0 0.5rem 1rem 0.5rem;
+}
+
+.page-content-wrapper {
+  padding-bottom: 60px;
+  width: 95%;
+}
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /*important to footer placement*/
+  position: relative;
+  top: 0px;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: var.$breakpoint1) {
+  .page-content-wrapper {
+    width: 100%;
+  }
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  aside {
+    min-height: 50px;
+    width: 100%;
+  }
+  main {
+    width: 100%;
+  }
+}
