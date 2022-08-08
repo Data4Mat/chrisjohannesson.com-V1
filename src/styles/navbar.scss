@@ -6,6 +6,10 @@
   width: 100%;
   background: linear-gradient(royalblue, aliceblue);
 }
+.hover-item:hover .dropdown-menu {
+  display: block;
+  margin-top: 0px;
+}
 
 @media screen and (max-width: var.$breakpoint1) {
   .navbar-wrapper {

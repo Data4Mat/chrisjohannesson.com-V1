@@ -18,8 +18,7 @@ export const About = () => {
             <div id="page_main" className="columns">
                 <div className="column">
                     <section className="main_text">
-                        <h5>Hi I'm Chris.</h5>
-                        <p className="no-indent">I have always been fascinated by technology.</p>
+                        <h5>Technology has always fascinated me.</h5>
                         <p className="no-indent">
                             Already as a very, very young person I always wanted to know what was inside and how things worked.
                         </p>

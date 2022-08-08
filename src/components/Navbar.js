@@ -1,8 +1,34 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from '../../public/graphics/logo.png';
 import '../styles/navbar.scss';
 
 const Navbar = () => {
+    useEffect(() => {
+        const url = window.location.pathname.slice(1);
+        console.log("url:", url);
+        const elem = url.length > 1
+            ? document.querySelector(`a[href="${url}"]`)
+            : document.querySelector('#navbarNavDropdown a[href="/"]');
+        console.log("elem:", elem);
+        highlightPage(elem);
+    })
+    const resetHighlights = () => {
+        const elems = document.querySelectorAll(".nav-link");
+        for (let i = 0; i < elems.length; i++) {
+            elems[i].id === "navbarDropdownMenuLink"
+                ? elems[i].className = "nav-link dropdown-toggle"
+                : elems[i].className = "nav-link";
+            elems[i].removeAttribute("aria-current");
+        }
+    };
+    const highlightPage = (caller) => {
+        resetHighlights();
+        console.log("caller b4:", caller);
+        caller.classList.add("active");
+        caller.setAttribute("aria-current", "page");
+        console.log("caller after:", caller);
+    };
+
 
     return (
         <div className="navbar-wrapper">
@@ -17,13 +43,17 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                                <a className="nav-link active" aria-current="true" href="/">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="about">About</a>
+                                <a className="nav-link"
+                                    href="about" > About</a>
                             </li>
-                            <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Blog</a>
+                            <li className="nav-item dropdown hover-item">
+                                <a
+                                    className="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+                                    href="blog"
+                                >Blog</a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li>
                                         <a className="dropdown-item" href="#">Webbutvecklingsbloggen</a>

@@ -15,7 +15,6 @@ module.exports = (_env, argv) => {
         devtool: isDevelopment && "cheap-module-source-map",
         // The main file of the React application
         entry: './src/index.js',
-
         output: {
             // The root directory to store output files in.
             path: path.resolve(__dirname, 'dist'),
@@ -63,12 +62,21 @@ module.exports = (_env, argv) => {
                 //     use: ['style-loader', 'css-loader', 'sass-loader']
                 // },
                 {
-                    test: /\.(png|jpg|gif|ico)$/i,
+                    test: /\.(png|jpg|gif)$/i,
                     use: {
                         loader: "url-loader",
                         options: {
                             limit: 8192,
                             name: "static/media/[name].[hash:8].[ext]"
+                        }
+                    }
+                },
+                {
+                    test: /\.ico/i,
+                    use: {
+                        loader: 'url-loader',
+                        options: {
+                            name: "favicon.ico"
                         }
                     }
                 },
@@ -124,9 +132,10 @@ module.exports = (_env, argv) => {
                 )
             }),
             new HtmlWebpackPlugin({
+                favicon: path.resolve(__dirname, 'public/favicon.ico'),
                 template: path.resolve(__dirname, "public/index.html"),
                 inject: true
-            })
+            }),
         ].filter(Boolean),
         optimization: {
             minimize: isProduction,
