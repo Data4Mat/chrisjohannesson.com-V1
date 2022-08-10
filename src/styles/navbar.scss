@@ -1,5 +1,10 @@
 @use "custom" as var;
 
+// Temporary removal of the Blog navigation.
+#blog {
+  display: none;
+}
+
 .navbar-wrapper {
   display: flex;
   justify-content: center;
@@ -10,6 +15,10 @@
 .hover-item:hover .dropdown-menu {
   display: block;
   margin-top: 0px;
+  border: 0px;
+  background-color: transparent;
+  box-shadow: 0px 8px 6px 0px rgba(65, 105, 225, 0.2);
+  border-radius: 0 0 8px 8px;
 }
 
 @media screen and (max-width: var.$breakpoint1) {

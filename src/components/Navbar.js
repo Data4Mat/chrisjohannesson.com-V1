@@ -5,11 +5,9 @@ import '../styles/navbar.scss';
 const Navbar = () => {
     useEffect(() => {
         const url = window.location.pathname.slice(1);
-        console.log("url:", url);
         const elem = url.length > 1
             ? document.querySelector(`a[href="${url}"]`)
             : document.querySelector('#navbarNavDropdown a[href="/"]');
-        console.log("elem:", elem);
         highlightPage(elem);
     })
     const resetHighlights = () => {
@@ -23,10 +21,8 @@ const Navbar = () => {
     };
     const highlightPage = (caller) => {
         resetHighlights();
-        console.log("caller b4:", caller);
         caller.classList.add("active");
         caller.setAttribute("aria-current", "page");
-        console.log("caller after:", caller);
     };
 
 
@@ -49,7 +45,7 @@ const Navbar = () => {
                                 <a className="nav-link"
                                     href="about" > About</a>
                             </li>
-                            <li className="nav-item dropdown hover-item">
+                            <li id="blog" className="nav-item dropdown hover-item">
                                 <a
                                     className="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
                                     href="blog"
@@ -70,13 +66,14 @@ const Navbar = () => {
                                 <a
                                     className="nav-link dropdown-toggle" id="downloads-main"
                                     href="downloads"
-                                >Downloads</a>
+                                    title="Downloadable documents"
+                                >Download Docs</a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li>
-                                        <a className="dropdown-item" href="cheatsheet">Git &amp; Github Cheat Sheet</a>
+                                        <a className="dropdown-item" href="https://documents.chrisjohannesson.com/pdf/GitGithubCheatSheet.pdf" target="_blank">Git &amp; Github Cheat Sheet</a>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="resume">My Resume</a>
+                                        <a className="dropdown-item" href="https://documents.chrisjohannesson.com/pdf/Resume.pdf" target="_blank">My Resume</a>
                                     </li>
                                 </ul>
                             </li>
