@@ -1,10 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+
 $breakpoint1: 576px;
 $text-color: navy;
 $text-font-family: Roboto, Arial, Helvetica, sans-serif;
 $headline-font-family: Palatino, Georgia, Times, "Times New Roman", serif;
 $monospace-font-family: Courier, "Courier new", monospace;
-
-@font-face {
-  font-family: "Roboto";
-  src: url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-}

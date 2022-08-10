@@ -15,7 +15,7 @@ const Navbar = () => {
     const resetHighlights = () => {
         const elems = document.querySelectorAll(".nav-link");
         for (let i = 0; i < elems.length; i++) {
-            elems[i].id === "navbarDropdownMenuLink"
+            elems[i].id === "navbarDropdownMenuLink" || elems[i].id === "downloads-main"
                 ? elems[i].className = "nav-link dropdown-toggle"
                 : elems[i].className = "nav-link";
             elems[i].removeAttribute("aria-current");
@@ -65,6 +65,20 @@ const Navbar = () => {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="projects">Projects</a>
+                            </li>
+                            <li className="nav-item dropdown hover-item">
+                                <a
+                                    className="nav-link dropdown-toggle" id="downloads-main"
+                                    href="downloads"
+                                >Downloads</a>
+                                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li>
+                                        <a className="dropdown-item" href="cheatsheet">Git &amp; Github Cheat Sheet</a>
+                                    </li>
+                                    <li>
+                                        <a className="dropdown-item" href="resume">My Resume</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="contact">Contact</a>

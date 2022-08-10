@@ -5,6 +5,9 @@ import { Projects } from '../pages/Projects';
 import { Contact } from '../pages/Contact';
 import { About } from '../pages/About';
 import { Blog } from '../pages/Blog';
+import { Downloads } from '../pages/Downloads';
+import { Cheatsheet } from '../pages/Cheatsheet';
+import { Resume } from '../pages/Resume';
 
 export const Routing = () => {
     return (
@@ -15,6 +18,9 @@ export const Routing = () => {
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/blog" element={<Blog />} />
+                <Route path="/downloads" element={<Downloads />} />
+                <Route path="/cheatsheet" element={<Cheatsheet />} />
+                <Route path="/resume" element={<Resume />} />
             </Routes>
         </Router>
     )

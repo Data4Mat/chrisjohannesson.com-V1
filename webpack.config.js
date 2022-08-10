@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
 const OptimizeCssAssetPlugin = require("css-minimizer-webpack-plugin");
 
+
 module.exports = (_env, argv) => {
     const isProduction = argv.mode === "production";
     const isDevelopment = !isProduction;
@@ -41,7 +42,7 @@ module.exports = (_env, argv) => {
                     }
                 },
                 {
-                    test: /\.scss$/,
+                    test: /\.s?css$/,
                     /**
                      * css-loader: 
                      * Parses CSS files, resolving extrernal resources, 
@@ -93,12 +94,12 @@ module.exports = (_env, argv) => {
                     use: ["@svgr/webpack"]
                 },
                 {
-                    test: /\.(eot|otf|ttf|woff|woff2)$/,
+                    test: /\.(eot|otf|ttf|woff|woff2|pdf)$/,
                     loader: require.resolve("file-loader"),
                     options: {
                         name: "static/media/[name].[hash:8].[ext]"
                     }
-                }
+                },
             ]
         },
         resolve: {
