@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack5';
+import { webPdf } from '../resources';
 import '../styles/cheatsheet.scss';
 
-import cheatSheet from '../data/GitGithubCheatSheet.pdf';
+// import cheatSheet from webPdf + '/GitGithubCheatSheet.pdf';
 
 // const options = {
 //     cMapUrl: 'cmaps/',
@@ -10,9 +11,12 @@ import cheatSheet from '../data/GitGithubCheatSheet.pdf';
 //     standardFontDataUrl: 'standard_fonts/',
 // };
 
-export const Cheatsheet = () => {
+export const Cheatsheet = async () => {
+    const cheatSheet = await require(webPdf + '/GitGithubCheatSheet.pdf');
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
+    const urlCheatSheet = webPdf + '/GitGithubCheatSheet.pdf';
+
 
     useEffect(() => {
         const nextBtn = document.querySelector(".pdf-file .nextBtn");
@@ -46,7 +50,7 @@ export const Cheatsheet = () => {
                 <div>
                     <input type="button" onClick={onPreviousHandler} className="btn prevBtn" value="< Prev" />
                 </div>
-                <div><a href="https://content.chrisjohannesson.com/GitGithubCheatSheet.pdf" target="_blank">
+                <div><a href={urlCheatSheet} target="_blank">
                     Download
                 </a>
                 </div>

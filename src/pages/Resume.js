@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack5';
+import { webPdf } from '../resources';
 import '../styles/resume.scss';
 
-import resume from '../data/Resume.pdf';
+
 
 // const options = {
 //     cMapUrl: 'cmaps/',
@@ -11,8 +12,10 @@ import resume from '../data/Resume.pdf';
 // };
 
 export const Resume = () => {
+    const resume = require(webPdf + '/Resume.pdf');
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
+    const urlResume = webPdf + '/Resume.pdf';
 
     useEffect(() => {
         const nextBtn = document.querySelector(".resume-pdf-file .nextBtn");
@@ -61,7 +64,7 @@ export const Resume = () => {
                 <div>
                     <input type="button" onClick={onPreviousHandler} className="btn prevBtn" value="< Prev" />
                 </div>
-                <div><a href="https://content.chrisjohannesson.com/Resume.pdf" target="_blank" coors>
+                <div><a href={urlResume} target="_blank" coors>
                     Download
                 </a>
                 </div>
