@@ -1,8 +1,12 @@
 import React, { useEffect } from 'react';
-import logo from '../../public/graphics/logo.png';
+import { webLogos, webPdf } from '../resources';
 import '../styles/navbar.scss';
 
 const Navbar = () => {
+    const logo = webLogos + '/logo.png';
+    const cheatSheet = webPdf + '/GitGithubCheatSheet.pdf';
+    const resume = webPdf + '/Resume.pdf';
+
     useEffect(() => {
         const url = window.location.pathname.slice(1);
         const elem = url.length > 1
@@ -70,10 +74,10 @@ const Navbar = () => {
                                 >Download Docs</a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li>
-                                        <a className="dropdown-item" href="https://documents.chrisjohannesson.com/pdf/GitGithubCheatSheet.pdf" target="_blank">Git &amp; Github Cheat Sheet</a>
+                                        <a className="dropdown-item" href={cheatSheet} target="_blank">Git &amp; Github Cheat Sheet</a>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="https://documents.chrisjohannesson.com/pdf/Resume.pdf" target="_blank">My Resume</a>
+                                        <a className="dropdown-item" href={resume} target="_blank">My Resume</a>
                                     </li>
                                 </ul>
                             </li>

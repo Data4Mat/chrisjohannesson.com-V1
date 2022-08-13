@@ -1,0 +1,73 @@
+@use "custom" as var;
+
+.helo-section-wrapper {
+  position: relative;
+  background-image: url(var.$url_images + "/bg_helo.jpg");
+  width: 100%;
+  height: max-content;
+  top: 0px;
+  left: 0px;
+
+  .helo-text-section {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1%;
+    margin-right: 3rem;
+    h2 {
+      position: relative;
+      text-align: right;
+      padding: 1rem 1rem 0.5rem 1rem;
+      background: radial-gradient(
+        ellipse,
+        rgba(240, 248, 255, 0.4),
+        rgba(240, 248, 255, 0.4),
+        transparent,
+        transparent
+      );
+      mix-blend-mode: hard-light;
+      z-index: 100;
+      border-radius: 50%;
+    }
+    .helo-text {
+      position: relative;
+      padding: 0.5rem 1rem;
+      background-color: rgba(240, 248, 255, 0.5);
+      border-radius: 5px;
+      mix-blend-mode: hard-light;
+      z-index: 100;
+      p {
+        position: relative;
+        text-align: right;
+        padding-right: 1rem;
+        right: 0px;
+        margin-bottom: 0.2rem;
+      }
+      ul {
+        mix-blend-mode: hard-light;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: var.$breakpoint1) {
+  .helo-section-wrapper {
+    .helo-text-section {
+      position: relative;
+      align-items: flex-start;
+      right: auto;
+      left: 0px;
+      margin-right: 0px;
+      .helo-text {
+        text-align: left;
+        background-color: transparent;
+      }
+    }
+    #helo-image {
+      display: none;
+    }
+  }
+}

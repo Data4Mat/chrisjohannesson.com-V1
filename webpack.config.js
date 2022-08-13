@@ -1,5 +1,4 @@
 const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -72,15 +71,15 @@ module.exports = (_env, argv) => {
                         }
                     }
                 },
-                {
-                    test: /\.ico/i,
-                    use: {
-                        loader: 'url-loader',
-                        options: {
-                            name: "favicon.ico"
-                        }
-                    }
-                },
+                // {
+                //     test: /\.ico/i,
+                //     use: {
+                //         loader: 'url-loader',
+                //         options: {
+                //             name: "favicon.ico"
+                //         }
+                //     }
+                // },
                 {
                     test: /\.svg$/,
                     // Transforms imported files into React components.
@@ -133,7 +132,7 @@ module.exports = (_env, argv) => {
                 )
             }),
             new HtmlWebpackPlugin({
-                favicon: path.resolve(__dirname, 'public/favicon.ico'),
+                // favicon: path.resolve(__dirname, 'public/favicon.ico'),
                 template: path.resolve(__dirname, "public/index.html"),
                 inject: true
             }),

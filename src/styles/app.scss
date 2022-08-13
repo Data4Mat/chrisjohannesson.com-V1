@@ -10,6 +10,7 @@ aside {
 body {
   background-color: aliceblue;
   font-family: var.$text-font-family;
+  color: var.$text-color;
 }
 
 .content-wrapper {
@@ -26,10 +27,13 @@ h6 {
   font-family: var.$headline-font-family;
 }
 
+.helo-text {
+  height: fit-content;
+}
 main {
   box-sizing: border-box;
   width: clamp(240px, 70%, 960px);
-  padding: 1rem 0.5rem;
+  padding: 0px;
   box-shadow: 0 0 8px lightgray;
   border-radius: 18px;
   background-color: transparent;

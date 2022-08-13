@@ -1,4 +1,5 @@
 import React from 'react';
+import Helo from '../components/HeloSection';
 import '../styles/about.scss';
 
 export const About = () => {
@@ -13,7 +14,7 @@ export const About = () => {
                 <div>
                     <h1>About me</h1>
                 </div>
-                <div className="column is-one-fifth"></div>
+                <Helo />
             </header>
             <div id="page_main" className="columns">
                 <div className="column">

@@ -1,4 +1,5 @@
 @use "custom" as var;
+
 #about-me {
   color: var.$text-color;
   header {
@@ -9,25 +10,36 @@
       font-weight: 700;
     }
   }
-  section {
-    h5,
-    h6 {
-      font-weight: 700;
-      font-family: var.$text-font-family;
+  .columns {
+    padding: 0px 0.5rem;
+    section {
+      h5,
+      h6 {
+        font-weight: 700;
+        font-family: var.$text-font-family;
+      }
+      h5 {
+        margin-bottom: 1.5em;
+      }
+      h6 {
+        margin-top: 1em;
+      }
+      p {
+        margin-bottom: 1em;
+        text-indent: 1em;
+      }
+      margin-bottom: 2em;
     }
-    h5 {
-      margin-bottom: 1.5em;
+    .no-indent {
+      text-indent: 0px;
     }
-    h6 {
-      margin-top: 1em;
-    }
-    p {
-      margin-bottom: 1em;
-      text-indent: 1em;
-    }
-    margin-bottom: 2em;
   }
-  .no-indent {
-    text-indent: 0px;
+}
+
+@media screen and (max-width: var.$breakpoint1) {
+  header {
+    .helo-section-wrapper {
+      display: none;
+    }
   }
 }

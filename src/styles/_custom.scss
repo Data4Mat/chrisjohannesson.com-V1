@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
 
+$url_pdf: "https://resources.chrisjohannesson.com/documents/pdf";
+$url_images: "https://resources.chrisjohannesson.com/content/images";
+$url_bg1: $url_images + "/bg1.jpeg";
 $breakpoint1: 576px;
 $text-color: navy;
 $text-font-family: Roboto, Arial, Helvetica, sans-serif;

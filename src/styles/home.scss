@@ -1,0 +1,63 @@
+@use "custom" as var;
+$borders: 1px solid navy;
+$bg-content: rgba(240, 248, 255, 0.9);
+
+.home-wrapper {
+  h1 {
+    // margin: 1rem 0px 0px 2rem;
+    margin: 0px;
+    padding: 1rem 0px 0px 2rem;
+  }
+
+  .home-content-wrapper {
+    display: grid;
+    grid-template-areas:
+      "news news news ... ..."
+      "... about about about ..."
+      "projects projects ... ... docs"
+      "projects projects links links links";
+    grid-gap: 0.5rem;
+    background-image: url(var.$url_bg1);
+    padding: 0.5rem;
+
+    div {
+      padding: 0.5rem 1rem;
+    }
+
+    .home {
+      &-1 {
+        background-color: $bg-content;
+        grid-area: news;
+      }
+      &-2 {
+        background-color: $bg-content;
+        grid-area: about;
+      }
+      &-3 {
+        grid-area: projects;
+        background-color: $bg-content;
+      }
+      &-4 {
+        grid-area: docs;
+        background-color: $bg-content;
+      }
+      &-5 {
+        grid-area: links;
+        background-color: $bg-content;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: var.$breakpoint1) {
+  .home-wrapper {
+    .home-content-wrapper {
+      grid-template-areas:
+        "news"
+        "about"
+        "docs"
+        "projects"
+        "links";
+    }
+  }
+}
