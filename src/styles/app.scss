@@ -27,9 +27,6 @@ h6 {
   font-family: var.$headline-font-family;
 }
 
-.helo-text {
-  height: fit-content;
-}
 main {
   box-sizing: border-box;
   width: clamp(240px, 70%, 960px);
@@ -55,7 +52,7 @@ main {
   min-height: 100vh;
 }
 
-@media screen and (max-width: var.$breakpoint1) {
+@media screen and (max-width: var.$breakpoint-nav) {
   .page-content-wrapper {
     width: 100%;
   }

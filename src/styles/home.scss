@@ -1,6 +1,8 @@
 @use "custom" as var;
+@use "sass:color";
 $borders: 1px solid navy;
 $bg-content: rgba(240, 248, 255, 0.9);
+$homeSections: (news, advert, projects, docs, links);
 
 .home-wrapper {
   h1 {
@@ -13,7 +15,7 @@ $bg-content: rgba(240, 248, 255, 0.9);
     display: grid;
     grid-template-areas:
       "news news news ... ..."
-      "... about about about ..."
+      "... ... advert advert advert"
       "projects projects ... ... docs"
       "projects projects links links links";
     grid-gap: 0.5rem;
@@ -24,40 +26,136 @@ $bg-content: rgba(240, 248, 255, 0.9);
       padding: 0.5rem 1rem;
     }
 
-    .home {
-      &-1 {
-        background-color: $bg-content;
-        grid-area: news;
+    @mixin section($name: "") {
+      .title {
+        font-size: 1.2em;
+        font-weight: 700;
       }
-      &-2 {
+
+      .home-#{$name} {
         background-color: $bg-content;
-        grid-area: about;
+        grid-area: $name;
+
+        @if ($name == "advert") {
+          a {
+            color: var.$text-color;
+            text-decoration: overline underline;
+          }
+          a:hover {
+            color: color.grayscale(var.$text-color);
+          }
+        }
+
+        @if ($name == "projects") {
+          p {
+            margin: 0px;
+          }
+          li {
+            margin-bottom: 1rem;
+          }
+          a {
+            text-decoration: none;
+            color: lighten(var.$text-color, 30%);
+            display: block;
+            margin-left: 0.8rem;
+          }
+          a::before {
+            content: "- ";
+          }
+          a:hover {
+            color: color.scale(
+              lighten(var.$text-color, 30%),
+              $green: 50%,
+              $blue: -30%
+            );
+          }
+        }
+
+        @if ($name== "docs") {
+          font-size: 0.8rem;
+          div {
+            border: 1px outset royalblue;
+            margin-bottom: 0.5rem;
+            background: white;
+          }
+          .copyright {
+            display: block;
+            font-size: 0.8em;
+            color: red;
+            margin-top: 1em;
+          }
+        }
+
+        @if ($name== "links") {
+          font-size: 12px;
+          h5 {
+            font-size: 1.5em;
+            text-decoration: underline;
+          }
+          .link-wrapper {
+            p {
+              margin: 0px;
+            }
+            a {
+              color: var.$text-color;
+            }
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+          }
+          ul {
+            list-style: none;
+            padding: 0px;
+          }
+        }
       }
-      &-3 {
-        grid-area: projects;
-        background-color: $bg-content;
-      }
-      &-4 {
-        grid-area: docs;
-        background-color: $bg-content;
-      }
-      &-5 {
-        grid-area: links;
-        background-color: $bg-content;
-      }
+    }
+
+    @each $name in $homeSections {
+      @include section($name);
     }
   }
 }
 
-@media screen and (max-width: var.$breakpoint1) {
+@media screen and (max-width: var.$breakpoint-nav) {
+  @mixin mobileSection($name: "") {
+    .home-#{$name} {
+      font-size: 0.8rem;
+      // padding-left: 0.5em;
+
+      @if ($name== "links") {
+        .link-wrapper {
+          flex-direction: column;
+          padding-left: 2em;
+        }
+      }
+    }
+  }
+
   .home-wrapper {
     .home-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      div {
+        padding: 0.5em 0.8em;
+      }
       grid-template-areas:
         "news"
-        "about"
+        "advert"
         "docs"
         "projects"
         "links";
+      grid-gap: 0.2rem;
+      padding: 0.2rem 0px;
+      @each $name in $homeSections {
+        @include mobileSection($name);
+      }
     }
+    max-width: 100%;
+    padding: 0px;
+    max-width: 100%;
+    padding: 0px;
   }
 }

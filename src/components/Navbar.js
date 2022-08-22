@@ -68,16 +68,27 @@ const Navbar = () => {
                             </li>
                             <li className="nav-item dropdown hover-item">
                                 <a
-                                    className="nav-link dropdown-toggle" id="downloads-main"
+                                    className="nav-link dropdown-toggle"
+                                    id="downloads-main"
                                     href="downloads"
                                     title="Downloadable documents"
                                 >Download Docs</a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li>
-                                        <a className="dropdown-item" href={cheatSheet} target="_blank">Git &amp; Github Cheat Sheet</a>
+                                        <a
+                                            className="dropdown-item"
+                                            href={cheatSheet}
+                                            type="application/pdf"
+                                            target="_blank"
+                                        >Git &amp; Github Cheat Sheet</a>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href={resume} target="_blank">My Resume</a>
+                                        <a
+                                            className="dropdown-item"
+                                            href={resume}
+                                            type="application/pdf"
+                                            target="_blank"
+                                        >My Resume</a>
                                     </li>
                                 </ul>
                             </li>

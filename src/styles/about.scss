@@ -36,7 +36,7 @@
   }
 }
 
-@media screen and (max-width: var.$breakpoint1) {
+@media screen and (max-width: var.$breakpoint-nav) {
   header {
     .helo-section-wrapper {
       display: none;
