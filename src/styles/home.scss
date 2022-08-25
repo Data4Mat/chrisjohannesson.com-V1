@@ -22,6 +22,15 @@ $homeSections: (news, advert, projects, docs, links);
     background-image: url(var.$url_bg1);
     padding: 0.5rem;
 
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: color var.$link-transition-time;
+      &:hover {
+        color: lighten(var.$text-color, 40%);
+      }
+    }
+
     div {
       padding: 0.5rem 1rem;
     }
@@ -73,6 +82,9 @@ $homeSections: (news, advert, projects, docs, links);
 
         @if ($name== "docs") {
           font-size: 0.8rem;
+          a {
+            text-decoration: underline;
+          }
           div {
             border: 1px outset royalblue;
             margin-bottom: 0.5rem;
@@ -97,7 +109,7 @@ $homeSections: (news, advert, projects, docs, links);
               margin: 0px;
             }
             a {
-              color: var.$text-color;
+              text-decoration: underline;
             }
             display: flex;
             flex-direction: row;
@@ -114,6 +126,19 @@ $homeSections: (news, advert, projects, docs, links);
 
     @each $name in $homeSections {
       @include section($name);
+    }
+  }
+}
+
+@media screen and (max-width: var.$breakpoint1) {
+  .home-wrapper {
+    .home-content-wrapper {
+      .home-links {
+        .link-wrapper {
+          flex-direction: column;
+          padding-left: 2em;
+        }
+      }
     }
   }
 }

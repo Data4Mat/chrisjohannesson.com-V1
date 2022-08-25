@@ -15,7 +15,7 @@ const HomeNews = ({ classData }) => {
                     There will also be an English language version of the same blog that will be launched around the same time.
                 </li>
                 <li>
-                    Work on a podcast focusing on the basics of web development and intended as a help for students studying web design, development, or programmiing is also planned.
+                    Work on a podcast focusing on the basics of web development and intended as a help for students studying web design, development, or programming is also planned.
                 </li>
                 <li>
                     There will be a Swedish language version of the podcast too.

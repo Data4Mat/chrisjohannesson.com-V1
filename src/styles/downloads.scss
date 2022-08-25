@@ -1,0 +1,58 @@
+@use "custom" as var;
+
+.downloads-wrapper {
+  padding-top: 1.5rem;
+
+  header {
+    padding: 1rem;
+  }
+  h1 {
+    text-align: left;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    &:last-child {
+      margin-bottom: 1rem;
+    }
+    section {
+      padding: 0 10% 1rem 10%;
+    }
+    .card {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      padding: 1em 0.5em;
+      border: 0px;
+      box-shadow: 0 0 3px 4px LightSteelBlue;
+      background-color: transparent;
+      transition: background-color var.$bg-transition-time;
+      &:hover {
+        background-color: var.$bg-color-hover-card;
+      }
+    }
+    .card + .card {
+      margin-top: 1rem;
+    }
+  }
+}
+@media screen and (max-width: var.$breakpoint4) {
+  .downloads-wrapper {
+    padding-top: 0px;
+    h1 {
+      font-size: 1.4rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: var.$breakpoint-nav) {
+  .download-wrapper {
+    h1 {
+      text-align: center;
+    }
+  }
+}

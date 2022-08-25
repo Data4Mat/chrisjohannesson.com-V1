@@ -1,14 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto");
+:root {
+  --bs-nav-link-font-size: $font-size-base;
+}
 
+// *** URLs ***
 $url_pdf: "https://resources.chrisjohannesson.com/documents/pdf";
 $url_images: "https://resources.chrisjohannesson.com/content/images";
 $url_bg1: $url_images + "/bg1.jpeg";
+
+// *** Breakpoints ***
 $breakpoint-nav: 576px;
 $breakpoint1: 1150px;
 $breakpoint2: 1050px;
 $breakpoint3: 950px;
-$breakpoint4: 800px;
+$breakpoint4: 900px;
+
+// *** Text & Fonts ***
 $text-color: navy;
+$font-size-base: 14px;
 $text-font-family: Roboto, Arial, Helvetica, sans-serif;
 $headline-font-family: Palatino, Georgia, Times, "Times New Roman", serif;
 $monospace-font-family: Courier, "Courier new", monospace;
+
+// *** Backgrounds ***
+$bg-transparent: transparent;
+$bg-color-hover-card: rgba(142, 188, 229, 0.644);
+
+// *** Transition Times
+$bg-transition-time: 1800ms;
+$link-transition-time: 500ms;

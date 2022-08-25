@@ -4,6 +4,9 @@ import Navbar from './components/Navbar';
 import { Routing } from './components/Routing';
 import './styles/app.scss';
 
+const resume_url = "https://resources.chrisjohannesson.com/documents/pdf/Resume.pdf";
+const cheatSheet_url = "https://resources.chrisjohannesson.com/documents/pdf/"
+
 const App = () => {
     return (
         <div className='page-wrapper'>

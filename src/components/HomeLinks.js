@@ -38,7 +38,9 @@ const HomeLinks = ({ classData }) => {
                             <a href="mailto:info@chrisjohannesson.com">info@chrisjohannesson.com</a>
                         </li>
                         <li>
-                            Tel: +46 (0)793 - 32 67 45
+                            <a href="tel:+46793326745">
+                                Tel: +46 (0)793 - 32 67 45
+                            </a>
                         </li>
                     </ul>
                 </div>

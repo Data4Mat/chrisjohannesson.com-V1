@@ -1,9 +1,34 @@
 @use "custom" as var;
-@import "~bootstrap/scss/bootstrap";
-@import "./reset.scss";
+@use "~bootstrap/scss/bootstrap";
+@use "./reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+$h-sizes: (1, 2, 3, 4, 5, 6);
+
+@mixin set-h-tags($int) {
+  h#{$int} {
+    font-family: var.$headline-font-family;
+    @if ($int < 3) {
+      $tmp: calc(3.8 - (0.8 * $int));
+      font-size: #{$tmp}rem;
+    }
+    @if ($int == 3) {
+      font-size: 1.8rem;
+    }
+    @if ($int == 4) {
+      font-size: 1.5rem;
+    }
+    @if ($int == 5) {
+      font-size: 1.2rem;
+    }
+    @if ($int == 6) {
+      font-size: 1rem;
+      font-style: italic;
+    }
+  }
+}
 
 aside {
-  width: 15%;
+  width: clamp(40px, 15%, 400px);
   background-color: yellow;
 }
 
@@ -11,20 +36,17 @@ body {
   background-color: aliceblue;
   font-family: var.$text-font-family;
   color: var.$text-color;
+  font-size: var.$font-size-base;
 }
 
 .content-wrapper {
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var.$headline-font-family;
+@each $x in $h-sizes {
+  @include set-h-tags($x);
 }
 
 main {

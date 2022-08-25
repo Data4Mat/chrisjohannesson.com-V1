@@ -50,6 +50,7 @@
       }
       ul {
         mix-blend-mode: hard-light;
+        margin-bottom: 0px;
       }
     }
   }
@@ -58,9 +59,9 @@
 @media screen and (max-width: var.$breakpoint1) {
   .helo-section-wrapper {
     .helo-text-section {
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
+      // flex-direction: row;
+      // align-items: center;
+      // justify-content: center;
       top: auto;
       bottom: 0px;
       margin-right: 3%;
@@ -73,6 +74,9 @@
 @media screen and (max-width: var.$breakpoint2) {
   .helo-section-wrapper {
     .helo-text-section {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
       top: 0px;
       bottom: auto;
     }
