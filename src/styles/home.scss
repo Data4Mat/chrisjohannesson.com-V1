@@ -16,12 +16,15 @@ $homeSections: (news, advert, projects, docs, links);
   .home-content-wrapper {
     display: grid;
     grid-template-areas:
-      "news news news news ..."
-      "... advert advert advert advert"
-      "projects projects ... docs docs"
-      "projects projects links links links";
+      "news news news  image1"
+      "image2 advert advert advert"
+      "projects projects projects image3"
+      "image4 docs docs docs"
+      "links links links links";
     grid-gap: 0.5rem;
-    background-image: url(var.$url_bg1);
+    // background-image: url(var.$url_bg1);
+    background:transparent;
+    border:0px;
     z-index: 100;
 
     padding: 0.5rem;
@@ -50,6 +53,11 @@ $homeSections: (news, advert, projects, docs, links);
         }
 
         @if ($name == "projects") {
+          .project-list{
+            display:flex;
+            flex-direction: row;
+            gap:1rem;
+          }
           p {
             margin: 0px;
           }
@@ -100,6 +108,7 @@ $homeSections: (news, advert, projects, docs, links);
           h5 {
             font-size: 1.5em;
             text-decoration: underline;
+            margin-left:14%
           }
           .link-wrapper {
             p {
@@ -127,13 +136,16 @@ $homeSections: (news, advert, projects, docs, links);
   }
 }
 
-@media screen and (max-width: var.$breakpoint1) {
+@media screen and (max-width: var.$breakpoint2) {
   .home-wrapper {
     .home-content-wrapper {
       .home-links {
+        align-items: center;
+        h5{
+          margin:0px;
+        }
         .link-wrapper {
           flex-direction: column;
-          padding-left: 2em;
         }
       }
     }

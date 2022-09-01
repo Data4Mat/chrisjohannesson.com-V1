@@ -6,9 +6,11 @@
   height: max-content;
   top: 0px;
   left: 0px;
+  padding: 1.5rem;
 
   img {
     border-radius: 50%;
+    box-shadow: 0 0 8px lightgrey;
   }
 
   .helo-text-section {
@@ -20,7 +22,8 @@
     flex-direction: column;
     align-items: flex-end;
     padding: 1%;
-    margin-right: 15%;
+    margin-top:3%;
+    margin-right: 18%;
     h2 {
       position: relative;
       text-align: right;
