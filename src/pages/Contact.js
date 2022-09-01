@@ -11,7 +11,7 @@ export const Contact = () => {
                 <div className="card">
                     <h5>Email:</h5>
                     <p><a href="mailto:info@chrisjohannesson.com">info@ChrisJohannesson.com</a></p>
-                    <p>Email is the easiest and preferred way to contact me. Please, feel free to inquire about my services and anything that you might need help with. I'm here to serve.I am also happy for any ideas, suggestions, and other remarks or comments you care to share with me.</p>
+                    <p>Email is the easiest and preferred way to contact me. Please, feel free to inquire about my services and anything that you might need help with. I'm here to serve. I am also happy for any ideas, suggestions, and other remarks or comments you care to share with me.</p>
                 </div>
                 <div className="card">
                     <h5>Telephone:</h5>

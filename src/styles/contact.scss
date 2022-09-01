@@ -2,14 +2,14 @@
 
 #contact_me {
   header {
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 15%;
   }
   section {
     padding: 0 15% 1rem 15%;
   }
   .card {
     background: transparent;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.2rem;
     border: 0px;
     box-shadow: 0 0 3px 4px LightSteelBlue;
     transition: background-color var.$bg-transition-time;
@@ -18,7 +18,7 @@
     }
   }
   .card + .card {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
   a {
     text-decoration: none;

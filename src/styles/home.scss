@@ -9,33 +9,31 @@ $homeSections: (news, advert, projects, docs, links);
     // margin: 1rem 0px 0px 2rem;
     margin: 0px;
     padding: 1rem 0px 0px 2rem;
+    width: 100%;
   }
+  // box-shadow: 0px 0px 10px navy;
 
   .home-content-wrapper {
     display: grid;
     grid-template-areas:
-      "news news news ... ..."
-      "... ... advert advert advert"
-      "projects projects ... ... docs"
+      "news news news news ..."
+      "... advert advert advert advert"
+      "projects projects ... docs docs"
       "projects projects links links links";
     grid-gap: 0.5rem;
     background-image: url(var.$url_bg1);
-    padding: 0.5rem;
+    z-index: 100;
 
-    a {
-      text-decoration: none;
-      color: inherit;
-      transition: color var.$link-transition-time;
-      &:hover {
-        color: lighten(var.$text-color, 40%);
-      }
-    }
+    padding: 0.5rem;
 
     div {
       padding: 0.5rem 1rem;
     }
-
+    h2 {
+      margin-left: 32px;
+    }
     @mixin section($name: "") {
+      line-height: 1.6rem;
       .title {
         font-size: 1.2em;
         font-weight: 700;
@@ -46,12 +44,8 @@ $homeSections: (news, advert, projects, docs, links);
         grid-area: $name;
 
         @if ($name == "advert") {
-          a {
-            color: var.$text-color;
-            text-decoration: overline underline;
-          }
-          a:hover {
-            color: color.grayscale(var.$text-color);
+          h2 {
+            margin-left: 0px;
           }
         }
 
@@ -64,7 +58,7 @@ $homeSections: (news, advert, projects, docs, links);
           }
           a {
             text-decoration: none;
-            color: lighten(var.$text-color, 30%);
+            color: lighten(var.$headline-color, 30%);
             display: block;
             margin-left: 0.8rem;
           }
@@ -73,7 +67,7 @@ $homeSections: (news, advert, projects, docs, links);
           }
           a:hover {
             color: color.scale(
-              lighten(var.$text-color, 30%),
+              lighten(var.$headline-color, 30%),
               $green: 50%,
               $blue: -30%
             );
@@ -89,6 +83,9 @@ $homeSections: (news, advert, projects, docs, links);
             border: 1px outset royalblue;
             margin-bottom: 0.5rem;
             background: white;
+          }
+          h2 {
+            margin-left: 0px;
           }
           .copyright {
             display: block;

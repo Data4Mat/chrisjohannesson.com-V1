@@ -6,6 +6,7 @@
     h1 {
       text-align: center;
       margin-bottom: 2em;
+      margin-top: 5rem; // remove line when we have an image to display.
       text-decoration: none;
       font-weight: 700;
       background: radial-gradient(
@@ -26,6 +27,7 @@
   .columns {
     padding: 0px 0.5rem;
     section {
+      padding: 0px 3rem;
       h5,
       h6 {
         font-weight: 700;
@@ -39,7 +41,6 @@
       }
       p {
         margin-bottom: 1em;
-        text-indent: 1em;
         a {
           color: inherit;
           text-decoration: none;
@@ -50,9 +51,6 @@
       }
       margin-bottom: 2em;
     }
-    .no-indent {
-      text-indent: 0px;
-    }
   }
 }
 
@@ -62,4 +60,11 @@
       display: none;
     }
   }
+  // .columns {
+  //   section {
+  //     p {
+  //       word-wrap: break-word;
+  //     }
+  //   }
+  // }
 }

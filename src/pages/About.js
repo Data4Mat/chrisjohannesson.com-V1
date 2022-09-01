@@ -9,11 +9,11 @@ export const About = () => {
     return (
         <article id="about-me">
             <header>
-                <div className="column is-one-fifth x-media_column">
+                {/*<div className="column is-one-fifth x-media_column">
                     <figure className="tile is-child image is-128x128">
                         <img className="max_photo_128 is-inline" src="/images/chris_johannesson - v2.png" />
                     </figure>
-                </div>
+                </div>*/}
                 <div>
                     <h1>Technology has always fascinated me.</h1>
                 </div>
@@ -21,7 +21,7 @@ export const About = () => {
             <div id="page_main" className="columns">
                 <div className="column">
                     <section className="main_text">
-                        <p className="no-indent">
+                        <p>
                             Already as a very, very young boy I always wanted to know what was inside and how things worked.
                         </p>
                         <p>

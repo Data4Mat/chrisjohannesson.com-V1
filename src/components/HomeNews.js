@@ -1,10 +1,15 @@
 import React from 'react';
+import { webPdf } from '../resources';
 
 const HomeNews = ({ classData }) => {
+    const resume = webPdf + "/Resume.pdf";
     return (
         <div className={classData}>
             <h2>News</h2>
             <ul>
+                <li>
+                    If you are looking to hire a Web/JavaScript developer you find my contact information <a href="contact">here</a> and my CV is available <a href={resume}>here</a>.
+                </li>
                 <li>
                     Just launched this complete re-build of my website. Everything is new from design to the code-base.
                 </li>

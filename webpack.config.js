@@ -1,9 +1,9 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const webpack = require("webpack");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserWebpackPlugin = require("terser-webpack-plugin");
-const OptimizeCssAssetPlugin = require("css-minimizer-webpack-plugin");
+const OptimizeCssAssetPlugin = require('css-minimizer-webpack-plugin');
 
 
 module.exports = (_env, argv) => {

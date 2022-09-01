@@ -2,11 +2,14 @@
 
 .helo-section-wrapper {
   position: relative;
-  // background-image: url(var.$url_images + "/bg_helo.jpg");
   width: 100%;
   height: max-content;
   top: 0px;
   left: 0px;
+
+  img {
+    border-radius: 50%;
+  }
 
   .helo-text-section {
     position: absolute;
@@ -17,11 +20,12 @@
     flex-direction: column;
     align-items: flex-end;
     padding: 1%;
-    margin-right: 3rem;
+    margin-right: 15%;
     h2 {
       position: relative;
       text-align: right;
-      padding: 1rem 1rem 0.5rem 1rem;
+      padding: 0px;
+      margin: 2rem 0 1rem 0;
       background: radial-gradient(
         ellipse,
         rgba(240, 248, 255, 0.8),
@@ -39,17 +43,17 @@
       background-color: rgba(240, 248, 255, 0.7);
       border-radius: 5px;
       mix-blend-mode: hard-light;
+      font-weight: 600;
       // height: 60%;
       z-index: 100;
       p {
         position: relative;
-        text-align: right;
-        padding-right: 1rem;
+        text-align: left;
         right: 0px;
         margin-bottom: 0.2rem;
+        font-weight: inherit;
       }
       ul {
-        mix-blend-mode: hard-light;
         margin-bottom: 0px;
       }
     }

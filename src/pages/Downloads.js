@@ -8,7 +8,7 @@ export const Downloads = () => {
         <div className="downloads-wrapper">
             <article>
                 <header>
-                    <h1>Documents for download</h1>
+                    <h1>Downloads</h1>
                 </header>
                 <section>
                     <CV />

@@ -1,7 +1,3 @@
-:root {
-  --bs-nav-link-font-size: $font-size-base;
-}
-
 // *** URLs ***
 $url_pdf: "https://resources.chrisjohannesson.com/documents/pdf";
 $url_images: "https://resources.chrisjohannesson.com/content/images";
@@ -15,7 +11,9 @@ $breakpoint3: 950px;
 $breakpoint4: 900px;
 
 // *** Text & Fonts ***
-$text-color: navy;
+$text-color: rgb(22, 21, 23);
+$headline-color: rgb(0, 0, 80);
+
 $font-size-base: 14px;
 $text-font-family: Roboto, Arial, Helvetica, sans-serif;
 $headline-font-family: Palatino, Georgia, Times, "Times New Roman", serif;

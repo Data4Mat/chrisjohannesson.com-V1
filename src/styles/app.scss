@@ -1,12 +1,14 @@
-@use "custom" as var;
 @use "~bootstrap/scss/bootstrap";
 @use "./reset.scss";
+@use "custom" as var;
+@use "sass:color";
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
 $h-sizes: (1, 2, 3, 4, 5, 6);
 
 @mixin set-h-tags($int) {
   h#{$int} {
     font-family: var.$headline-font-family;
+    color: var.$headline-color;
     @if ($int < 3) {
       $tmp: calc(3.8 - (0.8 * $int));
       font-size: #{$tmp}rem;
@@ -27,9 +29,17 @@ $h-sizes: (1, 2, 3, 4, 5, 6);
   }
 }
 
+a {
+  color: var.$text-color;
+  transition: color var.$link-transition-time;
+  &:hover {
+    color: color.scale(var.$text-color, $blue: 50%, $green: 20%, $red: -30%);
+  }
+}
+
 aside {
   width: clamp(40px, 15%, 400px);
-  background-color: yellow;
+  background-color: transparent;
 }
 
 body {
@@ -45,13 +55,14 @@ body {
   flex-direction: row;
   justify-content: center;
 }
+
 @each $x in $h-sizes {
   @include set-h-tags($x);
 }
 
 main {
   box-sizing: border-box;
-  width: clamp(240px, 70%, 960px);
+  width: clamp(240px, 100%, 960px);
   padding: 0px;
   box-shadow: 0 0 8px lightgray;
   border-radius: 18px;
@@ -61,8 +72,9 @@ main {
 
 .page-content-wrapper {
   padding-bottom: 60px;
-  width: 95%;
+  width: 100%;
 }
+
 .page-wrapper {
   display: flex;
   flex-direction: column;

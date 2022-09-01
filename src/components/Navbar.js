@@ -47,7 +47,7 @@ const Navbar = () => {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link"
-                                    href="about" > About</a>
+                                    href="about">About</a>
                             </li>
                             <li id="blog" className="nav-item dropdown hover-item">
                                 <a
