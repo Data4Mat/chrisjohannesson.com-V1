@@ -6,23 +6,7 @@
   }
   section {
     padding: 0 15% 1rem 15%;
-    .card {
-      background: transparent;
-      padding: 0.5rem 1rem;
-      border: 0px;
-      box-shadow: 0 0 3px 4px LightSteelBlue;
-      transition: background-color var.$bg-transition-time;
-      &:hover {
-        background-color: var.$bg-color-hover-card;
-      }
-      h5 {
-        padding: 0.5rem 1rem;
-      }
-      p {
-        padding: 0.5rem 1rem;
-        margin: 0px;
-      }
-    }
+    
     .card + .card {
       margin-top: 1rem;
     }

@@ -32,6 +32,20 @@ const HomeLinks = ({ classData }) => {
                     </ul>
                 </div>
                 <div>
+                    <p className="title">Useful Sites</p>
+                    <ul>
+                        <li>
+                            <a href="https://feltby.se/">Laila Feltby - Designer</a>
+                        </li>
+                        <li>
+                            <a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a>
+                        </li>
+                        <li>
+                            <a href="https://developers.google.com/">Google Developers</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
                     <p className="title">Contact Info</p>
                     <ul>
                         <li>

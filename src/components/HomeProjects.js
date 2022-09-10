@@ -35,7 +35,7 @@ const HomeProjects = ({ classData }) => {
             </div>
 
         </div>
-    )
+    );
 }
 
-export default HomeProjects;
+export default HomeProjects;;

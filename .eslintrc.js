@@ -22,5 +22,7 @@ module.exports = {
       "namedComponents": "function-declaration" | "function-expression" | "arrow-function" | "function-expression" | "arrow-function",
       "unnamedComponents": "function-expression" | "arrow-function"
     }],
-  },
+    'semi': 'always',
+    'no-extra-semi': true,
+  }
 };

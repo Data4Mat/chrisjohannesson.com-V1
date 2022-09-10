@@ -12,7 +12,7 @@ export const Home = () => {
         <div className="home-wrapper">
             <h1>Welcome</h1>
             <Helo />
-            <div className="home-content-wrapper card">
+            <div className="home-content-wrapper">
                 <News classData="home-news card" />
                 <Advert classData="home-advert card" />
                 <Projects classData="home-projects card" />
