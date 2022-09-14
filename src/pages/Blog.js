@@ -1,9 +1,8 @@
-import React from "react";
+import React from 'react';
 
-export const Blog = () => {
-    return (
-        <div>
-            <h1>Blog Page</h1>
-        </div>
-    );
-};
+// eslint-disable-next-line import/prefer-default-export
+export const Blog = () => (
+  <div>
+    <h1>Blog Page</h1>
+  </div>
+);

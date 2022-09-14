@@ -29,3 +29,38 @@
     }
   }
 }
+
+@media screen and (max-width: var.$breakpoint-nav) {
+  #contact_me {
+    header {
+      padding: 0;
+      h1 {
+        text-align: center;
+      }
+    }
+    section {
+      padding: 0 0 1rem 0;
+    }
+    .card {
+      background: transparent;
+      padding: 1rem 1.2rem;
+      border: 0px;
+      box-shadow: 0 0 3px 4px LightSteelBlue;
+      transition: background-color var.$bg-transition-time;
+      &:hover {
+        background-color: var.$bg-color-hover-card;
+      }
+    }
+    .card + .card {
+      margin-top: 1.5rem;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: color var.$link-transition-time;
+      &:hover {
+        color: lighten(var.$text-color, 40%);
+      }
+    }
+  }
+}

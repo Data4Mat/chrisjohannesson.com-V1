@@ -18,11 +18,12 @@ module.exports = {
   ],
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-    "react/function-component-definition": [enabled, {
-      "namedComponents": "function-declaration" | "function-expression" | "arrow-function" | "function-expression" | "arrow-function",
-      "unnamedComponents": "function-expression" | "arrow-function"
+    'react/function-component-definition': [2, {
+      namedComponents: ['function-declaration', 'function-expression', 'arrow-function'],
+      unnamedComponents: 'arrow-function',
     }],
-    'semi': 'always',
-    'no-extra-semi': true,
-  }
+    semi: 2,
+    'no-extra-semi': 2,
+    'linebreak-style': ['error', 'windows'],
+  },
 };

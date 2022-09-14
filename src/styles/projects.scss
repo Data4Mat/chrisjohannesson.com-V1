@@ -6,7 +6,7 @@
   }
   section {
     padding: 0 15% 1rem 15%;
-    
+
     .card + .card {
       margin-top: 1rem;
     }
@@ -25,5 +25,13 @@
     font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 1;
     font-size: 0.8em;
     text-indent: 0em;
+  }
+}
+
+@media screen and (max-width: var.$breakpoint-nav) {
+  #projects {
+    section {
+      padding: 0 0 1rem 0;
+    }
   }
 }
