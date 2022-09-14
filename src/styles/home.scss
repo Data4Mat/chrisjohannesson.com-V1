@@ -43,7 +43,6 @@ $homeSections: (news, advert, projects, docs, links);
       }
 
       .home-#{$name} {
-        background-color: $bg-content;
         grid-area: $name;
 
         @if ($name == "advert") {
