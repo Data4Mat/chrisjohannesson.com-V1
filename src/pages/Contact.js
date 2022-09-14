@@ -16,7 +16,7 @@ const Contact = () => (
       <div className="card">
         <h5>Telephone:</h5>
         <p><a href="tel:+46793326745">+46 (0)79 332 6745</a></p>
-        <p>My telephone times are weekdays 09:00 (9AM)CET to 17:00 (5PM)CET holidays closed.</p>
+        <p>My telephone times are weekdays 09:00 (9AM)CET to 17:00 (5PM)CET all holidays and weekends closed.</p>
         <p>Please note that all times are in the Central European Time Zone.</p>
         <p>If I&apos;m not available then leave a message on my answering service and I will get back to you as soon as possible.</p>
       </div>
