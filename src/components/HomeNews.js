@@ -10,27 +10,21 @@ const HomeNews = ({ classData }) => {
       <h2>News</h2>
       <ul>
         <li>
-          If you are looking to hire a Web/JavaScript developer you find my contact information
-          {' '}
+          If you are looking to hire a Web/JavaScript developer you find my contact information&nbsp;
           <a href="contact">here</a>
-          {' '}
-          and my CV is available
+          &nbsp;and my CV is available&nbsp;
           <a href={resume}>here</a>
           .
         </li>
         <li>
-          Just launched this complete re-build of my website. Everything is new from design to the code-base. My good friend
-          {' '}
+          Just launched this complete re-build of my website. Everything is new from design to the code-base. My good friend&nbsp;
           <a href="https://feltby.se/">Laila Feltby</a>
-          {' '}
-          was a great help reeling in my wild design ideas and put me on track again. So thank you for your invaluable help.
+          &nbsp;was a great help reeling in my wild design ideas and put me on track again. So thank you for your invaluable help.
         </li>
         <li>
-          I&apos;m working on a Swedish language blog about Web development
-          {' '}
+          I&apos;m working on a Swedish language blog about Web development&nbsp;
           <em>(Webbutveckling)</em>
-          {' '}
-          that will be launched sometime towards the end of 2022 if everything goes according to plan.
+          &nbsp;that will be launched sometime towards the end of 2022 if everything goes according to plan.
         </li>
         <li>
           There will also be an English language version of the same blog that will be launched around the same time.
