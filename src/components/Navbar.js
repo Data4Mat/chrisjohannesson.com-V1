@@ -33,84 +33,84 @@ const Navbar = () => {
   });
 
   return (
-    <div className="navbar-wrapper">
-      <nav className="navbar navbar-expand-sm navbar-light bg-transparent">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="/">
-            <img src={logo} alt="Chris Johannesson logo" width="200px" />
+    <div className='navbar-wrapper'>
+      <nav className='navbar navbar-expand-sm navbar-light bg-transparent'>
+        <div className='container-fluid'>
+          <a className='navbar-brand' href='/'>
+            <img src={logo} alt='Chris Johannesson logo' width='200px' />
           </a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon" />
+          <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
+            <span className='navbar-toggler-icon' />
           </button>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="true" href="/">Home</a>
+          <div className='collapse navbar-collapse' id='navbarNavDropdown'>
+            <ul className='navbar-nav'>
+              <li className='nav-item'>
+                <a className='nav-link active' aria-current='true' href='/'>Home</a>
               </li>
-              <li className="nav-item">
+              <li className='nav-item'>
                 <a
-                  className="nav-link"
-                  href="about"
+                  className='nav-link'
+                  href='about'
                 >
                   About
                 </a>
               </li>
-              <li id="blog" className="nav-item dropdown hover-item">
+              <li id='blog' className='nav-item dropdown hover-item'>
                 <a
-                  className="nav-link dropdown-toggle"
-                  id="navbarDropdownMenuLink"
-                  href="blog"
+                  className='nav-link dropdown-toggle'
+                  id='navbarDropdownMenuLink'
+                  href='blog'
                 >
                   Blog
                 </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <ul className='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
                   <li>
-                    <a className="dropdown-item" href="https://webbutveckling.chrisjohannesson.com">Webbutvecklingsbloggen</a>
+                    <a className='dropdown-item' href='https://webbutveckling.chrisjohannesson.com'>Webbutvecklingsbloggen</a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="https://webdevelopment.chrisjohannesson.com">The Web Development Blog</a>
+                    <a className='dropdown-item' href='https://webdevelopment.chrisjohannesson.com'>The Web Development Blog</a>
                   </li>
                 </ul>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="projects">Projects</a>
+              <li className='nav-item'>
+                <a className='nav-link' href='projects'>Projects</a>
               </li>
-              <li className="nav-item dropdown hover-item">
+              <li className='nav-item dropdown hover-item'>
                 <a
-                  className="nav-link dropdown-toggle"
-                  id="downloads-main"
-                  href="downloads"
-                  title="Downloadable documents"
+                  className='nav-link dropdown-toggle'
+                  id='downloads-main'
+                  href='downloads'
+                  title='Downloadable documents'
                 >
                   Download Docs
                 </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <ul className='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
                   <li>
                     <a
-                      className="dropdown-item"
+                      className='dropdown-item'
                       href={cheatSheet}
-                      type="application/pdf"
-                      target="_blank"
-                      rel="noreferrer"
+                      type='application/pdf'
+                      target='_blank'
+                      rel='noreferrer'
                     >
                       Git &amp; Github Cheat Sheet
                     </a>
                   </li>
                   <li>
                     <a
-                      className="dropdown-item"
+                      className='dropdown-item'
                       href={resume}
-                      type="application/pdf"
-                      target="_blank"
-                      rel="noreferrer"
+                      type='application/pdf'
+                      target='_blank'
+                      rel='noreferrer'
                     >
                       My Resume
                     </a>
                   </li>
                 </ul>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="contact">Contact</a>
+              <li className='nav-item'>
+                <a className='nav-link' href='contact'>Contact</a>
               </li>
             </ul>
           </div>

@@ -7,7 +7,7 @@ const About = () => {
   const linkedinLearningUrl = 'https://www.linkedin.com/learning/';
   const newTab = 'Opens in new tab';
   return (
-    <article id="about-me">
+    <article id='about-me'>
       <header>
         {/* <div className="column is-one-fifth x-media_column">
                     <figure className="tile is-child image is-128x128">
@@ -18,9 +18,9 @@ const About = () => {
           <h1>Technology has always fascinated me.</h1>
         </div>
       </header>
-      <div id="page_main" className="columns">
-        <div className="column">
-          <section className="main_text">
+      <div id='page_main' className='columns'>
+        <div className='column'>
+          <section className='main_text'>
             <p>
               Already as a very, very young boy I always wanted to know what was inside and how things worked.
             </p>
@@ -32,30 +32,30 @@ const About = () => {
             </h6>
             <p>
               I had already in the 90&apos;s and early 2000&apos;s built a couple of websites for myself. I used the latter ones as promotional platforms where employers could download my&nbsp;
-              <a href={resumeUrl} alt="Link to my Resume / CV" target="_blank" title={newTab} rel="noreferrer">
+              <a href={resumeUrl} alt='Link to my Resume / CV' target='_blank' title={newTab} rel='noreferrer'>
                 CV/resume
-                <span className="material-symbols-outlined">open_in_new</span>
+                <span className='material-symbols-outlined'>open_in_new</span>
               </a>
               &nbsp;and friends and family could see photos I had taken in different places around the world during my travels. A few years later I moved to the Philippines and through some contacts I was asked to build a website for a company called IGP (Intensity Glow Products). I accepted and started to build their site. I had the whole responsibility to make the plan for the site according to their instructions. I used ASP.NET and C# with JavaScript in the frontend.
             </p>
-            <p className="no-indent">
+            <p className='no-indent'>
               After that I was writing some software for my currency trading initiative in the early 2010&apos;s.
             </p>
             <p>
               I have taken courses in JavaScript development, an advanced class in.NET programming, and recently a course in HTML and CSS and a course in JavaScript at Univeristy West, Trollhattan, Sweden. I also have Microsoft&apos;s Azure Fundamentals Certificate. In my spare time I have taken some courses at
               <a
                 href={linkedinLearningUrl}
-                alt="Link to linkedin learning site"
+                alt='Link to linkedin learning site'
                 title={newTab}
-                target="_blank"
-                rel="noreferrer"
+                target='_blank'
+                rel='noreferrer'
               >
                 &nbsp;LinkedIn learning
-                <span className="material-symbols-outlined">open_in_new</span>
+                <span className='material-symbols-outlined'>open_in_new</span>
               </a>
               . For those of you who haven&apos;t tried it, please do.They have a lot of really good quality courses and no I don&apos;t get paid to say that. I have to pay to get access just as everyone else.😊
               You can find all my LinkedIn certificates at&nbsp;
-              <a href="https://www.linkedin.com/in/chrisjohdev/details/certifications/">https://www.linkedin.com/in/chrisjohdev/details/certifications/</a>
+              <a href='https://www.linkedin.com/in/chrisjohdev/details/certifications/'>https://www.linkedin.com/in/chrisjohdev/details/certifications/</a>
               .
             </p>
 
@@ -82,8 +82,8 @@ const About = () => {
             <p>
               I am always open for serious requests for programming and/or web development projects. You find my contact information on my
               <a
-                href="/contact"
-                alt="link to my contact page"
+                href='/contact'
+                alt='link to my contact page'
               >
                 &nbsp;contact
               </a>

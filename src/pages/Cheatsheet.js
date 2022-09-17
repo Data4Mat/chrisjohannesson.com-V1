@@ -45,21 +45,21 @@ const Cheatsheet = async () => {
   };
 
   return (
-    <div className="pdf-file">
+    <div className='pdf-file'>
       <Document file={cheatSheet} onLoadSuccess={onDocumentLoadSuccess}>
         <Page pageNumber={pageNumber} />
       </Document>
-      <div className="pagination">
+      <div className='pagination'>
         <div>
-          <input type="button" onClick={onPreviousHandler} className="btn prevBtn" value="< Prev" />
+          <input type='button' onClick={onPreviousHandler} className='btn prevBtn' value='< Prev' />
         </div>
         <div>
-          <a href={urlCheatSheet} target="_blank" rel="noreferrer">
+          <a href={urlCheatSheet} target='_blank' rel='noreferrer'>
             Download
           </a>
         </div>
         <div>
-          <input type="button" onClick={onNextHandler} className="btn nextBtn" value="Next >" />
+          <input type='button' onClick={onNextHandler} className='btn nextBtn' value='Next >' />
         </div>
       </div>
       <p>

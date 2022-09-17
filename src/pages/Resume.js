@@ -55,21 +55,21 @@ const Resume = () => {
   });
 
   return (
-    <div className="resume-pdf-file">
+    <div className='resume-pdf-file'>
       <Document file={resume} onLoadSuccess={onDocumentLoadSuccess}>
         <Page pageNumber={pageNumber} />
       </Document>
-      <div className="pagination">
+      <div className='pagination'>
         <div>
-          <input type="button" onClick={onPreviousHandler} className="btn prevBtn" value="< Prev" />
+          <input type='button' onClick={onPreviousHandler} className='btn prevBtn' value='< Prev' />
         </div>
         <div>
-          <a href={urlResume} target="_blank" coors rel="noreferrer">
+          <a href={urlResume} target='_blank' coors rel='noreferrer'>
             Download
           </a>
         </div>
         <div>
-          <input type="button" onClick={onNextHandler} className="btn nextBtn" value="Next >" />
+          <input type='button' onClick={onNextHandler} className='btn nextBtn' value='Next >' />
         </div>
       </div>
       <p>

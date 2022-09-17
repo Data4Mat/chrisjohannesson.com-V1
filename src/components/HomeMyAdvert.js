@@ -10,7 +10,7 @@ const HomeMyAdvert = ({ classData }) => (
     </p>
     <p>
       Go to my&nbsp;
-      <a href="contact">Contact</a>
+      <a href='contact'>Contact</a>
       &nbsp;page for ways to get in touch with me. I&apos;ll be happy to assist you on your web-presence journey.
     </p>
   </div>

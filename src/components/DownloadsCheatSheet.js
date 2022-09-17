@@ -6,7 +6,7 @@ import { webPdf } from '../resources';
 const DownloadsCheatSheet = () => {
   const url = `${webPdf}/GitGithubCheatSheet.pdf`;
   return (
-    <div id="cheatSheetDownload" className="card">
+    <div id='cheatSheetDownload' className='card'>
 
       <h6><a href={url}>Git &amp; Github Cheat Sheet</a></h6>
       <p>

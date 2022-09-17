@@ -12,14 +12,14 @@ import Resume from '../pages/Resume';
 const Routing = () => (
   <Router>
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/downloads" element={<Downloads />} />
-      <Route path="/cheatsheet" element={<Cheatsheet />} />
-      <Route path="/resume" element={<Resume />} />
+      <Route path='/' element={<Home />} />
+      <Route path='/about' element={<About />} />
+      <Route path='/projects' element={<Projects />} />
+      <Route path='/contact' element={<Contact />} />
+      <Route path='/blog' element={<Blog />} />
+      <Route path='/downloads' element={<Downloads />} />
+      <Route path='/cheatsheet' element={<Cheatsheet />} />
+      <Route path='/resume' element={<Resume />} />
     </Routes>
   </Router>
 );
