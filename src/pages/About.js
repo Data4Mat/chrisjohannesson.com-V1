@@ -55,7 +55,7 @@ const About = () => {
               </a>
               . For those of you who haven&apos;t tried it, please do.They have a lot of really good quality courses and no I don&apos;t get paid to say that. I have to pay to get access just as everyone else.😊
               You can find all my LinkedIn certificates at&nbsp;
-              <a href='https://www.linkedin.com/in/chrisjohdev/details/certifications/'>https://www.linkedin.com/in/chrisjohdev/details/certifications/</a>
+              <a href='https://www.linkedin.com/in/chrisjohdev/details/certifications/'>&quot;LinkedIn Certificates&quot;</a>
               .
             </p>
 
