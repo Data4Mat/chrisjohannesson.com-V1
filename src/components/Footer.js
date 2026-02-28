@@ -17,7 +17,10 @@ const Footer = () => {
         &nbsp;
         Chris Johannesson&nbsp;/&nbsp;
       </p>
-      <p>Maintained by <a href="https://data4mat.se">Data4Mat&trade; AB</a></p>
+      <p>
+        Maintained by
+        <a href='https://data4mat.se'>Data4Mat&trade; AB</a>
+      </p>
     </footer>
   );
 };

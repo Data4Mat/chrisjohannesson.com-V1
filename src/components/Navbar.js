@@ -5,7 +5,7 @@ import '../styles/navbar.scss';
 const Navbar = () => {
   const logo = `${webLogos}/logo.png`;
   const cheatSheet = `${webPdf}/GitGithubCheatSheet.pdf`;
-  const resume = `${webPdf}/Resume.pdf`;
+  // const resume = `${webPdf}/Resume.pdf`;
 
   const resetHighlights = () => {
     const elems = document.querySelectorAll('.nav-link');

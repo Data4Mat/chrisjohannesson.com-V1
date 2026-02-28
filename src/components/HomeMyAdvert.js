@@ -20,7 +20,7 @@ const HomeMyAdvert = ({ classData }) => (
 
     <p>
       For services, pricing, and contact details, please visit&nbsp;
-      <a href="https://data4mat.se" target="_blank" rel="noopener noreferrer">
+      <a href='https://data4mat.se' target='_blank' rel='noopener noreferrer'>
         Data4Mat AB
       </a>
       .
