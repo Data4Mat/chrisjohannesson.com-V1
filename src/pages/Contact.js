@@ -26,7 +26,7 @@ const Contact = () => (
         <h5>Telephone:</h5>
         <p><a href='tel:+4637166030'>+46 (0)371 660 30</a></p>
         <p>
-          Business hours for Data4Mat AB are weekdays
+          Phone support hours for Data4Mat AB are weekdays
           09:00–13:00 CET (9:00 AM–1:00 PM CET).
           Closed on weekends and public holidays.
         </p>
