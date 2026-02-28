@@ -8,14 +8,16 @@ const Footer = () => {
     <footer>
       <p>
         Copyright &copy;
-        {' '}
+        &nbsp;
         {fromYear}
-        {' '}
+        &nbsp;
         -
+        &nbsp;
         {nowYear}
-        {' '}
-        Chris Johannesson
+        &nbsp;
+        Chris Johannesson&nbsp;/&nbsp;
       </p>
+      <p>Maintained by <a href="https://data4mat.se">Data4Mat&trade; AB</a></p>
     </footer>
   );
 };

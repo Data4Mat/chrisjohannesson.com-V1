@@ -5,35 +5,40 @@ import { webPdf } from '../resources';
 
 const HomeNews = ({ classData }) => {
   const resume = `${webPdf}/Resume.pdf`;
+
   return (
     <div className={classData}>
       <h2>News</h2>
       <ul>
         <li>
-          If you are looking to hire a Web/JavaScript developer you find my contact information&nbsp;
-          <a href='contact'>here</a>
-          &nbsp;and my CV is available&nbsp;
-          <a href={resume}>here</a>
-          .
+          I am the founder and CEO of Data4Mat&trade; AB, a web development and website
+          maintenance company focused on delivering stable and sustainable web
+          solutions for small and mid-sized organizations. 
+          All professional web development and maintenance services are now
+          conducted exclusively through&nbsp;
+          <a href="https://data4mat.se" target="_blank" rel="noopener noreferrer">
+            Data4Mat AB
+          </a>.
         </li>
+
         <li>
-          Just launched this complete re-build of my website. Everything is new from design to the code-base. My good friend&nbsp;
-          <a href='https://feltby.se/'>Laila Feltby</a>
-          &nbsp;was a great help reeling in my wild design ideas and put me on track again. So thank you for your invaluable help.
+          Data4Mat AB is currently in an intensive growth phase following its
+          formation. The focus is on building long-term client relationships,
+          structured processes, and scalable service offerings within Website-as-a-Service
+          (WSaaS) and WordPress-based solutions.
         </li>
+
         <li>
-          I&apos;m working on a Swedish language blog about Web development&nbsp;
-          <em>(Webbutveckling)</em>
-          &nbsp;that will be launched sometime towards the end of 2022 if everything goes according to plan.
+          This website remains a personal platform presenting my background,
+          experience, and technical profile.
         </li>
+
         <li>
-          There will also be an English language version of the same blog that will be launched around the same time.
-        </li>
-        <li>
-          Work on a podcast focusing on the basics of web development and intended as a help for students studying web design, development, or programming is also planned.
-        </li>
-        <li>
-          There will be a Swedish language version of the podcast too.
+          Design guidance and creative direction for this site were provided
+          by my dear friend&nbsp;
+          <a href="https://feltby.se/" target="_blank" rel="noopener noreferrer">
+            Laila Feltby
+          </a>, whose input helped refine and focus the overall visual expression.
         </li>
       </ul>
     </div>

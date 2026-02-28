@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const HomeProjects = ({ classData }) => (
   <div className={classData}>
-    <h2>Projects</h2>
+    <h2>Older Projects</h2>
     <div className='project-list'>
       <ul>
         <li>

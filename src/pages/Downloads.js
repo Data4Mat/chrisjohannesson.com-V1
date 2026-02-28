@@ -10,7 +10,7 @@ const Downloads = () => (
         <h1>Downloads</h1>
       </header>
       <section>
-        <CV />
+        
         <Sheet />
       </section>
     </article>

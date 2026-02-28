@@ -25,14 +25,14 @@ const HomeLinks = ({ classData }) => (
           <li>
             <a href='https://resources.chrisjohannesson.com/documents/pdf/GitGithubCheatSheet.pdf'>Git &amp; Github Cheat Sheet</a>
           </li>
-          <li>
-            <a href='https://resources.chrisjohannesson.com/documents/pdf/Resume.pdf'>My Resume</a>
-          </li>
         </ul>
       </div>
       <div>
         <p className='title'>Useful Sites</p>
         <ul>
+          <li>
+            <a href='https://data4mat.se/'>Data4Mat AB</a>
+          </li>
           <li>
             <a href='https://feltby.se/'>Laila Feltby - Designer</a>
           </li>
@@ -48,11 +48,11 @@ const HomeLinks = ({ classData }) => (
         <p className='title'>Contact Info</p>
         <ul>
           <li>
-            <a href='mailto:info@chrisjohannesson.com'>info@chrisjohannesson.com</a>
+            <a href='mailto:info@data4mat.se'>info@data4mat.se</a>
           </li>
           <li>
-            <a href='tel:+46793326745'>
-              Tel: +46 (0)793 - 32 67 45
+            <a href='tel:+4637166030'>
+              Tel: +46 (0)371 - 660 30
             </a>
           </li>
         </ul>

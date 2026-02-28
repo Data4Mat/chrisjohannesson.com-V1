@@ -21,74 +21,109 @@ const About = () => {
       <div id='page_main' className='columns'>
         <div className='column'>
           <section className='main_text'>
+
             <p>
-              Already as a very, very young boy I always wanted to know what was inside and how things worked.
-            </p>
-            <p>
-              Many broken toys later I was entrusted with changing the cabling in my grandmother&apos;s living room pendant light. A few hours after I started that project. I proudly presented it to her. We hung it in the ceiling and she turned the switch and voila, it worked. It was still hanging there until she passed away 20 something years later.
-            </p>
-            <h6>
-              Fast forwarding to the mid 2000&apos;s.
-            </h6>
-            <p>
-              I had already in the 90&apos;s and early 2000&apos;s built a couple of websites for myself. I used the latter ones as promotional platforms where employers could download my&nbsp;
-              <a href={resumeUrl} alt='Link to my Resume / CV' target='_blank' title={newTab} rel='noreferrer'>
-                CV/resume
-                <span className='material-symbols-outlined'>open_in_new</span>
-              </a>
-              &nbsp;and friends and family could see photos I had taken in different places around the world during my travels. A few years later I moved to the Philippines and through some contacts I was asked to build a website for a company called IGP (Intensity Glow Products). I accepted and started to build their site. I had the whole responsibility to make the plan for the site according to their instructions. I used ASP.NET and C# with JavaScript in the frontend.
-            </p>
-            <p className='no-indent'>
-              After that I was writing some software for my currency trading initiative in the early 2010&apos;s.
-            </p>
-            <p>
-              I have taken courses in JavaScript development, an advanced class in.NET programming, and recently a course in HTML and CSS and a course in JavaScript at Univeristy West, Trollhattan, Sweden. I also have Microsoft&apos;s Azure Fundamentals Certificate. In my spare time I have taken some courses at
-              <a
-                href={linkedinLearningUrl}
-                alt='Link to linkedin learning site'
-                title={newTab}
-                target='_blank'
-                rel='noreferrer'
-              >
-                &nbsp;LinkedIn learning
-                <span className='material-symbols-outlined'>open_in_new</span>
-              </a>
-              . For those of you who haven&apos;t tried it, please do.They have a lot of really good quality courses and no I don&apos;t get paid to say that. I have to pay to get access just as everyone else.😊
-              You can find all my LinkedIn certificates at&nbsp;
-              <a href='https://www.linkedin.com/in/chrisjohdev/details/certifications/'>&quot;LinkedIn Certificates&quot;</a>
-              .
+              Technology has fascinated me for as long as I can remember. As a child,
+              I wanted to understand what was inside things and how they worked — often
+              by carefully taking them apart and attempting to rebuild them.
             </p>
 
-            <h6>Jumping back to my humble beginnings again.</h6>
             <p>
-              My love for computers and programming was awakened in the early 80&apos;s. My first programmable gadget was a Casio PB100 that you could program with Basic. I was completely taken with it and I spent many nights wondering how it was working inside.
+              One moment stands out clearly. After many sacrificed toys and experiments,
+              I was entrusted with rewiring the pendant light in my grandmother’s living
+              room. I was still young, and the responsibility meant more to me than I
+              understood at the time. I worked methodically, finished the job, and we
+              hung it back in place. When she turned the switch and it lit up, the
+              feeling was not just relief — it was pride.
             </p>
+
             <p>
-              A few years later I got the opportunity to go back to school and decided to get an education in the field so I started to study electrical engineering. When I started there one of the first voluntary courses I took was assembler programming. We had to write a little program to control an elevator or a drill, but I wrote one for each it was just too much fun not to. It was an amazing feeling to see that miniature elevator and drill follow my exact instructions, stopping at floors and drilling holes according to the logic I had provided. I still get the same feeling when I develop web pages and can see them come to life in the browser.
+              That lamp remained there until she passed away more than two decades later.
+              It was a small project, but it carried weight. It taught me that careful
+              work, responsibility, and attention to detail create results that last.
+              That lesson has followed me into every technical system I have built since.
             </p>
+
             <p>
-              Then followed programming in Comal a semi-popular language at the time. It was quite similar to Basic. After some math courses at the University of Gothenburg and a few courses at Chalmers University of Technology&apos;s Engineering Physics section I moved to London.
+              My first programmable device was a Casio PB-100 in the early 1980s.
+              Writing small programs in BASIC and watching logic come to life sparked
+              a lasting interest in structured problem solving and system design.
             </p>
+
+            <h6>Early Academic Foundations</h6>
+
             <p>
-              At that time, you could connect to the internet, which was a really new thing back then, through a BT line and a modem. I was lucky I had a 19.2KB modem but soon found out there were 28.8KB modems available. Anyhow, with this you could also set up a small personal website which was fantastic. I learned as much as I could of HTML code and had my very first site up and running in a few days. But then things changed and my music took me to many amazing and exotic places.
+              In 1988 I studied mathematics at the University of Gothenburg, followed by
+              Engineering Physics studies at Chalmers University of Technology
+              (1988–1990). These years strengthened analytical thinking and reinforced a
+              disciplined approach to technical problem solving.
             </p>
+
             <p>
-              After a while I realized that my musical career would benefit from having a website where I could promote myself. So, I found a service provider and registered a domain name maverick-web.com and went to work on the project. That was, if anything ever has been, learning on the job. Thankfully I had a few really good books I had bought while I had been on shore leave in the US. My favorite was Dynamic HTML: The Definitive Reference 2nd edition by Danny Goodman. I still have it on my desk to this very day. It&apos;s safe to say that without that book I wouldn&apos;t have had any website at all. Reading it was like looking into a new world were all the secrets of the DOM was revealed and how to manipulate it.
+              In 1995 I completed the Derivatives Trading Training Program at Financial
+              Instruments Strategies Ltd. in London, UK. Although outside software development, the
+              program deepened my understanding of quantitative modeling, structured
+              risk analysis, and complex system behavior — skills that translate well
+              into software architecture and systems thinking.
             </p>
+
+            <h6>Web & Software Development Path</h6>
+
             <p>
-              Still to this day I have the same feeling inside that I had all those years ago whenever I get some new toys (framework and technologies) to use in my programming and I can see things happening in the browser. It was love at first sight and it has remained so.
+              During the 1990s I began building websites and experimenting with early
+              internet technologies. Over time this evolved into deeper technical work,
+              including server-side programming, structured data processing using XML
+              and XSLT, and backend scripting in Perl. These early experiences provided
+              practical insight into how web systems communicate, transform data, and
+              operate on the server.
             </p>
-            <h6>Finally!</h6>
+
             <p>
-              I am always open for serious requests for programming and/or web development projects. You find my contact information on my
-              <a
-                href='/contact'
-                alt='link to my contact page'
-              >
-                &nbsp;contact
-              </a>
-              &nbsp;page.
+              Prior to formal university studies in web development, I completed
+              advanced coursework in C# and .NET programming and earned Microsoft’s
+              Azure Fundamentals certification. This strengthened my backend foundation
+              and provided early exposure to cloud-based infrastructure and
+              service-oriented thinking.
             </p>
+
+            <h6>Formal Web Development Education</h6>
+
+            <p>
+              I earned an Utbildningsbevis from Yrkeshögskolan with a specialization in
+              JavaScript development (80 YH-poäng), consolidating modern frontend and
+              application-level development skills.
+            </p>
+
+            <p>
+              Between 2022 and 2024 I attended the two-year Web Programmer program at
+              Linnaeus University with a specialization in web development.
+            </p>
+
+            <p>
+              The program provided structured training in client- and server-side web
+              programming, object-oriented development, UML-based analysis and design,
+              and established design patterns. It included software testing (unit,
+              integration, and system testing), introduction to software quality,
+              database technology (SQL and exposure to other database models),
+              web architecture, and agile development methods.
+            </p>
+
+            <p>
+              Emphasis was placed on writing robust applications with high code quality,
+              applying disciplined engineering practices, and developing maintainable
+              systems rather than short-term solutions.
+            </p>
+
+            <h6>Today</h6>
+
+            <p>
+              My background combines early technical curiosity, analytical academic
+              foundations, structured formal education, and practical experience across
+              both legacy and modern technologies. This breadth provides a durable
+              understanding of how web systems are designed, implemented, tested,
+              and evolved over time.
+            </p>
+
           </section>
         </div>
       </div>

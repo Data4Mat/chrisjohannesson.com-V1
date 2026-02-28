@@ -55,23 +55,6 @@ const Navbar = () => {
                   About
                 </a>
               </li>
-              <li id='blog' className='nav-item dropdown hover-item'>
-                <a
-                  className='nav-link dropdown-toggle'
-                  id='navbarDropdownMenuLink'
-                  href='blog'
-                >
-                  Blog
-                </a>
-                <ul className='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
-                  <li>
-                    <a className='dropdown-item' href='https://webbutveckling.chrisjohannesson.com'>Webbutvecklingsbloggen</a>
-                  </li>
-                  <li>
-                    <a className='dropdown-item' href='https://webdevelopment.chrisjohannesson.com'>The Web Development Blog</a>
-                  </li>
-                </ul>
-              </li>
               <li className='nav-item'>
                 <a className='nav-link' href='projects'>Projects</a>
               </li>
@@ -94,17 +77,6 @@ const Navbar = () => {
                       rel='noreferrer'
                     >
                       Git &amp; Github Cheat Sheet
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className='dropdown-item'
-                      href={resume}
-                      type='application/pdf'
-                      target='_blank'
-                      rel='noreferrer'
-                    >
-                      My Resume
                     </a>
                   </li>
                 </ul>

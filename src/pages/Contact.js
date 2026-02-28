@@ -10,15 +10,29 @@ const Contact = () => (
     <section>
       <div className='card'>
         <h5>Email:</h5>
-        <p><a href='mailto:info@chrisjohannesson.com'>info@ChrisJohannesson.com</a></p>
-        <p>Email is the easiest and preferred way to contact me. Please, feel free to inquire about my services and anything that you might need help with. I&apos;m here to serve. I am also happy for any ideas, suggestions, and other remarks or comments you care to share with me.</p>
+        <p><a href='mailto:info@data4mat.se'>info@data4mat.se</a></p>
+        <p>
+          This is the official contact address for Data4Mat AB. All inquiries
+          regarding web development, website maintenance, Website-as-a-Service
+          (WSaaS), partnerships, or general questions should be directed here.
+          All professional engagements are conducted exclusively through Data4Mat AB.
+        </p>
+        <p>
+          For clients outside Europe, email is the recommended method of contact.
+        </p>
       </div>
+
       <div className='card'>
         <h5>Telephone:</h5>
-        <p><a href='tel:+46793326745'>+46 (0)79 332 6745</a></p>
-        <p>My telephone times are weekdays 09:00 (9AM)CET to 17:00 (5PM)CET all holidays and weekends closed.</p>
-        <p>Please note that all times are in the Central European Time Zone.</p>
-        <p>If I&apos;m not available then leave a message on my answering service and I will get back to you as soon as possible.</p>
+        <p><a href='tel:+4637166030'>+46 (0)371 660 30</a></p>
+        <p>
+          Business hours for Data4Mat AB are weekdays
+          09:00–13:00 CET (9:00 AM–1:00 PM CET).
+          Closed on weekends and public holidays.
+        </p>
+        <p>
+          All times are stated in Central European Time (CET).
+        </p>
       </div>
       <div className='card'>
         <h5>LinkedIn&trade;</h5>
