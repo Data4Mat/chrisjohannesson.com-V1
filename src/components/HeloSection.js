@@ -11,13 +11,13 @@ const HeloSection = () => {
         <h2>Chris Johannesson</h2>
         <div>
           <div className='helo-text'>
-            <p>Web and JavaScript Developer</p>
+            <p>Web Systems Developer</p>
             <ul>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Node</li>
-              <li>HTML</li>
-              <li>CSS &amp; Sass</li>
+              <li>JavaScript / TypeScript</li>
+              <li>React / Next.js</li>
+              <li>Object-Oriented Development (Java / C#)</li>
+              <li>Databases</li>
+              <li>Containerized Environments</li>
             </ul>
           </div>
         </div>
