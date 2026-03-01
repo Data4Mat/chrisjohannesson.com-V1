@@ -21,7 +21,6 @@ const Contact = () => (
           For clients outside Europe, email is the recommended method of contact.
         </p>
       </div>
-
       <div className='card'>
         <h5>Telephone:</h5>
         <p><a href='tel:+4637166030'>+46 (0)371 660 30</a></p>
